@@ -6,6 +6,6 @@ import static org.junit.Assert.*;
 public class TestHelloWorld {
     @Test
     public void testGetGreeting() throws Exception {
-    assertEquals("Hello,user",helloWorld.getGreeting("user"));
+    assertEquals("Hello,user",HelloWorld.getGreeting("user"));
     }
 }
