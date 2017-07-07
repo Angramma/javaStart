@@ -8,4 +8,8 @@ public class TestHelloWorld {
     public void testGetGreeting() throws Exception {
     assertEquals("Hello,user",HelloWorld.getGreeting("user"));
     }
+    @Test(expected = IllegalArgumentException.class)
+    public void testGetGreetingNull() throws Exception {
+        String greeting =  HelloWorld.getGreeting(null);
+    }
 }
